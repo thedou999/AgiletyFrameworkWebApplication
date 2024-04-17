@@ -168,8 +168,7 @@ import { GetUserPage } from '../../common/userService'
 import { GetImage } from '../../common/fileService'
 import zhCn from 'element-plus/es/locale/lang/zh-cn'
 import { apiUrl, baseService } from '../../common/apiRequest.ts';
-import { ElMessage, ElMessageBox, FormContext } from 'element-plus';
-import { tourStepProps } from 'element-plus/lib/components/tour/src/step.js';
+import { ElMessage, ElMessageBox } from 'element-plus';
 
 //#region data
 const small = ref(true)
