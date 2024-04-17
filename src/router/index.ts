@@ -62,7 +62,6 @@ let routeData: Menu[] = []
 
 const SettingUserRouter = async () => {
     const rsp = await axios.get('http://localhost:5108/api/Menu/GetAllMenu')
-    // const rsp = await baseService.get('/Menu/GetAllMenu')
     const result = rsp.data as IApiDataResult<Menu[]>
 
     if (result.success == true) {
@@ -108,7 +107,6 @@ const SettingUserRouter = async () => {
         router.addRoute('home', r)
     })
 }
-
 
 await SettingUserRouter()
 

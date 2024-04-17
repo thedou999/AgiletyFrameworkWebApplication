@@ -33,5 +33,4 @@ const route = useRoute();
 const items = mainStore().$state.menuList
 
 
-
 </script>

@@ -41,11 +41,10 @@ baseService.interceptors.response.use( async rsp => {
             mainStore().$state.refreshToken = getAccountResult.data.refreshToken
             mainStore().$state.menuList = []
             mainStore().$state.user = getAccountResult.data.user
-            localStorage.removeItem('main')
 
             console.log('拦截器处理鉴权成功，刷新token');
-            
         }
+        return rsp
     }
     return rsp
 })

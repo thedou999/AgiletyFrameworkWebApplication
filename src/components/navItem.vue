@@ -24,5 +24,4 @@ import Navitem from './navItem.vue'
 const props = defineProps<{item : Menu, basePath:string}>()
 
 
-
 </script>
